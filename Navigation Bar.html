@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Navigation Bar</title>
+      <style>
+         *{
+         margin : 0px;
+         padding : 0px;
+         }
+         body{            
+         background-color: #f7dfdf;
+         }
+         .menu{
+         height : 70px;
+         background-color : #fc0341;
+         }
+         .menu li{
+         text-decoration : none;
+         display : inline-block;
+         }
+         .menu li a{
+         font-size: 25px;
+         font-weight: bold;
+         height: 50px;
+         width: 150px;
+         padding-top: 20px;
+         text-decoration : none;
+         color : black;
+         display : block;
+         text-align: center;
+         }
+         .menu li a:hover{
+         background-color : #262022;
+         border-radius : 5px;
+         color : white;
+         }
+         .education{
+         display : none;
+         }
+         .menu li:nth-child(2):hover .education{
+         position: absolute;
+         display: block;
+         background-color:#ff8785;
+         color: black;
+         font-size: 20px;
+         border-radius: 5px;
+         }
+         .menu li:nth-child(2):hover .education li{
+         padding: 10px;
+         display: block;
+         border-radius: 5px;
+         }
+         .education li:hover{
+         background-color: black;
+         color: white;         
+         }
+         .cs_subclass{
+            display: none;
+         }
+         .cs_subclass{
+         border-radius: 5px;
+         width : 250px;
+         margin-left: 367px;
+         background-color: #ffafad;
+         color: black;
+         border-radius: 5px;
+         }
+         .education li:nth-child(1):hover .cs_subclass{
+         position: absolute;
+         display: block;
+         margin-top: -10px;
+         }
+         .company{
+         display : none;
+         }
+         .menu li:nth-child(3):hover .company{
+         position: absolute;
+         display: block;
+         background-color:#ff8785;
+         color: black;
+         font-size: 20px;
+         border-radius: 5px;
+         width:250px;
+         }
+         .menu li:nth-child(3):hover .company li{
+         padding: 10px;
+         display: block;
+         border-radius: 5px;
+         }
+         .company li:hover{
+         background-color: black;
+         color: white;         
+         }
+         .comp_subclass{
+            display: none;
+         }
+         .comp_subclass{
+         border-radius: 5px;
+         width : 250px;
+         margin-left: 240px;
+         background-color: #ffafad;
+         color: black;
+         border-radius: 5px;
+         }
+         .company li:nth-child(1):hover .comp_subclass{
+         position: absolute;
+         display: block;
+         margin-top: -10px;
+         }
+         #img{
+            margin: 5px 10px 5px 10px;
+            height:60px;
+            border-radius: 50px;
+            float :left;
+         }
+      </style>
+   </head>
+   <body>
+      <ul class = "menu">
+         <li><a href = "#">Home</a></li>
+         <li>
+            <a href = "#">Education</a>
+            <ul class = "education">
+               <li>Computer Science
+                  <ul class = "cs_subclass">
+                     <li>Cyber Security</li>
+                     <li>Artificial Intelligence</li>
+                     <li>Machine Learning</li>
+                     <li>Deep Learning</li>
+                     <li>Cloud Computing</li>
+                     <li>Web & App Development</li>
+                  </ul>
+               </li>
+               <li>Information Technology</li>
+               <li>Electronic And Communication Engineering</li>
+               <li>Electric And Electronic Engineering</li>
+            </ul>
+         </li>
+         <li>
+            <a href = "#">Companies</a>
+            <ul class = "company">
+               <li>Technical Hiring
+                  <ul class = "comp_subclass">
+                     <li>Metaverse</li>
+                     <li>Google</li>
+                     <li>Amazon</li>
+                     <li>Netflix</li>
+                  </ul>
+               </li>
+               <li>Design Hiring</li>
+               <li>Non Coding Hiring</li>
+            </ul>
+         </li>
+         <li><a href = "#">About Us</a></li>
+         <a href="#"><img src="vasangk02_Brand.png" id="img"/></a>
+      </ul>
+   </body>
+</html>
